@@ -6,7 +6,7 @@ import { Container, Navbar } from 'react-bootstrap';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>Home
     <Navbar bg="light" expand="lg">
 <Container>
     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
@@ -26,6 +26,7 @@ const Home = () => {
     </Navbar.Collapse>
 </Container>
 </Navbar>
+</div>
   )
 }
 
