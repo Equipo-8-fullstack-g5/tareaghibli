@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import  Home  from "./components/Home";
-import { Container, Navbar , Nav, NavDropdown } from 'react-bootstrap';
+import Card_movies from "./components/Card_movies";
+import { Container, Navbar , Nav, NavDropdown, Card } from 'react-bootstrap';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    <Home />
+   <Card_movies />
   </React.StrictMode>
 );
 
