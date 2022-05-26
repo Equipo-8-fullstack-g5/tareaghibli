@@ -1,21 +1,47 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Card } from "react-bootstrap"
+import axios from 'axios'
+
 
 const Card_movies = () => {
+const [films, setFilms] = useState ([])
+
+  let url = "https://ghibliapi.herokuapp.com/films"
+
+  const traerFilms = async () => {
+   let datos = await axios.get (url) 
+   setFilms (datos.data)
+   console.log (datos)
+  }
+  
+  useEffect(() => {
+    traerFilms()
+  }, [])
+
+
   return (
-    <Card className="bg-dark text-white">
-    <Card.Img src="holder.js/100px270" alt="Card image" />
+    films.map ((film) => {
+      return (
+      <Card  className="bg-dark text-white">
+    <Card.Img src={film.image} alt="Card image" />
     <Card.ImgOverlay>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>{film.title} </Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+        {film.description}
       </Card.Text>
-      <Card.Text>Last updated 3 mins ago</Card.Text>
+      <Card.Text>
+        {film.director}
+      </Card.Text>
+      <Card.Text>
+        {film.running_time}
+      </Card.Text>
+      <Card.Text>
+        {film.rt_score}
+      </Card.Text>
     </Card.ImgOverlay>
   </Card>
-
-  )
+    )
+    }))
 }
 
 export default Card_movies
