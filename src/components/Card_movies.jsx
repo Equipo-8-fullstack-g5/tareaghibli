@@ -22,7 +22,7 @@ const [films, setFilms] = useState ([])
   return (
     films.map ((film) => {
       return (
-      <Card className="bg-dark text-white">
+      <Card  className="bg-dark text-white">
     <Card.Img src={film.image} alt="Card image" />
     <Card.ImgOverlay>
       <Card.Title>{film.title} </Card.Title>
