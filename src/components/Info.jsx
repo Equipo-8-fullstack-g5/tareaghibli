@@ -24,7 +24,7 @@ const Info = () => {
 <Card.Img variant="top" src={datosFilm.movie_banner} />
     <Card.Body>
       <Card.Text>
-        <h1>{datosFilm.title}</h1>
+        <h1 className="text-center text-info">{datosFilm.title}</h1>
       </Card.Text>
       <Card.Text>
         <h3>{datosFilm.description}</h3>
@@ -35,7 +35,7 @@ const Info = () => {
   <Card>
     <Card.Body>
       <Card.Text>
-        <h2>Calificacion: {datosFilm.rt_score}</h2>
+        <h2 className='text-warning'>Calificacion: {datosFilm.rt_score}</h2>
       </Card.Text>
       <br />
       <Card.Text>

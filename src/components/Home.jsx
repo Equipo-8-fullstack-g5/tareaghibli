@@ -1,6 +1,6 @@
 import React from 'react'
 import Menu from './Menu';
-
+import Footer from './Footer'
 import { Container, Navbar , Nav, FormText, Carousel } from 'react-bootstrap';
 
 
@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <Menu />
-      <div>
+      <div className='w-80'>
         <h2 className="text-center">Home</h2>
         <Container className='align-items-center'>
         <Carousel variant="dark" className='d-flex justify-content-center'>
@@ -39,7 +39,7 @@ const Home = () => {
 </Carousel>
 </Container>
       </div>
-    
+      <Footer />
 </div>
   )
 }

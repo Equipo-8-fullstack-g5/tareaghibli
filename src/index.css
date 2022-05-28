@@ -12,3 +12,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#pie{
+  background-color: #89b0ae !important;
+  position:relative !important;
+  bottom:0 !important;
+  margin-bottom: 0 !important ;
+  padding-bottom: 0 !important;
+  
+}
+footer{
+  background-color: #89b0ae !important;
+  position:relative !important;
+  bottom:0 !important;
+  margin-bottom: 0 !important ;
+  padding-bottom: 0 !important;
+  
+}
+#cabeza{
+  background-color: #89b0ae !important;
+}

@@ -1,10 +1,11 @@
 import React from 'react'
 import {Navbar, Container, Nav} from 'react-bootstrap';
+import "../index.css"
 
 const Menu = () => {
   return (
-    <div>
-        <Navbar bg="light" expand="lg">
+    <div >
+        <Navbar id='cabeza' bg="light" expand="lg">
           <Container>
             <Navbar.Brand href="#home">Studio Ghibli</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
